@@ -1,9 +1,9 @@
 #// Start of script
-#// Get year and month for csv export file
-$DateTime = Get-Date -f "yyyy-MM"
+#// Get year, month, hours and minutes for csv export file
+$DateTime = Get-Date -f "-yyyy-MM-dd-HH-mm"
 
 #// Set CSV file name
-$CSVFile = "C:\AD_Groups"+$DateTime+".csv"
+$CSVFile = "C:\Temp\AD_Groups"+$DateTime+".csv"
 
 #// Create emy array for CSV data
 $CSVOutput = @()
